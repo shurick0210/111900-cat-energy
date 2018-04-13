@@ -36,8 +36,8 @@
 
       <h2 class="programm__title">Подбор программы</h2>
       <p class="programm__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__info">
+      <form class="diet-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="diet-form__info">
           <label for="name-field">Имя:*</label>
           <input type="text" name="name" id="name-field" value="Барсик" required><br>
           <label for="weight-field">Вес (кг):*</label>
@@ -45,7 +45,7 @@
           <label for="age-field">Возраст (лет):</label>
           <input type="text" name="age" id="age-field" value="7">
         </div>
-        <div class="form__programm">
+        <div class="diet-form__programm">
           <label>
             <input type="radio" name="programm-choice" value="slim" checked> Похудение
           </label>
@@ -58,19 +58,19 @@
             <input type="radio" name="programm-choice" value="advise"> Не знаю (Нужен ваш совет)
           </label>
         </div>
-        <div class="form__contacts">
-          <h3 class="form__title">Контактные данные (владельца кота)</h3>
+        <div class="diet-form__contacts">
+          <h3 class="diet-form__title">Контактные данные (владельца кота)</h3>
           <label for="email-field">E-mail:*</label>
           <input type="email" name="email" id="email-field" value="kuklachev@gmail.com" required><br>
           <label for="phone-field">Телефон:*</label>
           <input type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90" required>
         </div>
-        <div class="form__comment">
-          <h3 class="form__title">Комментарий</h3><br>
+        <div class="diet-form__comment">
+          <h3 class="diet-form__title">Комментарий</h3><br>
           <textarea name="comment" id="comment-field" rows="5">Расскажите обо всех повадках кота</textarea>
         </div>
-        <div class="form__addition">
-          <h3 class="form__title">Дополнительно</h3>
+        <div class="diet-form__addition">
+          <h3 class="diet-form__title">Дополнительно</h3>
           <label>
             <input type="checkbox" name="shugar" checked> Сахарозаменитель
           </label>
@@ -88,7 +88,7 @@
           </label>
         </div>
         <button class="button button__form" type="submit">Отправить заявку</button><br>
-        <small class="form__legend"><sup>*</sup>— Обязательные поля</small>
+        <small class="diet-form__legend"><sup>*</sup>— Обязательные поля</small>
       </form>
 
     </section>
