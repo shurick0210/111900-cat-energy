@@ -1,0 +1,18 @@
+.social__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.social__link {
+  padding-left: 30px;
+  padding-right: 30px;
+  &--vkontakte {
+    background: url(../img/icon-vk-mobile.svg) 0 0 no-repeat;
+  }
+  &--instagramm {
+    background: url(../img/icon-insta-mobile.svg) 0 0 no-repeat;
+  }
+  &--facebook {
+    background: url(../img/icon-fb-mobile.svg) 0 0 no-repeat;
+  }
+}
