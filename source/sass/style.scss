@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Oswald", Arial, sans-serif;
 }
+
 .button {
   padding: 12px 74px;
   color: #ffffff;
@@ -13,7 +14,16 @@ body {
   text-decoration: none;
   background-color: #68b738;
 }
+
+.section-title {
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
 @import "header.scss";
 @import "main.scss";
 @import "offers.scss";
 @import "catalog.scss";
+@import "steps.scss";
