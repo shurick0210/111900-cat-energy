@@ -1,0 +1,27 @@
+.additional {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.additional__title {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dadada;
+  color: #111111;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+}
+
+.additional__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  list-style: none;
+  border-bottom: 1px solid #dadada;
+}

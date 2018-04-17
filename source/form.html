@@ -3,28 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
     <header class="header">
       <a class="header__logo-link">
-        <img class="header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кот энерджи">
-      </a>
-      <a class="header__logo-link">
-        <img class="header__logo-title-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кот энерджи">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кот энерджи">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a>Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -35,35 +34,35 @@
       <h1 class="visually-hidden">Форма подбора программы</h1>
 
       <h2 class="programm__title">Подбор программы</h2>
-      <p class="programm__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="programm__description">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
       <form class="diet-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="diet-form__info">
           <label for="name-field">Имя:*</label>
-          <input type="text" name="name" id="name-field" value="Барсик" required><br>
+          <input class="diet-form__input" type="text" name="name" id="name-field" value="Барсик" required><br>
           <label for="weight-field">Вес (кг):*</label>
-          <input type="text" name="weight" id="weight-field" value="7" required><br>
+          <input class="diet-form__input" type="text" name="weight" id="weight-field" value="7" required><br>
           <label for="age-field">Возраст (лет):</label>
-          <input type="text" name="age" id="age-field" value="7">
+          <input class="diet-form__input" type="text" name="age" id="age-field" value="7">
         </div>
         <div class="diet-form__programm">
           <label>
-            <input type="radio" name="programm-choice" value="slim" checked> Похудение
+            <input class="diet-form__input" type="radio" name="programm-choice" value="slim" checked> Похудение
           </label>
           <br>
           <label>
-            <input type="radio" name="programm-choice" value="pro"> Набор массы
+            <input class="diet-form__input" type="radio" name="programm-choice" value="pro"> Набор массы
           </label>
           <br>
           <label>
-            <input type="radio" name="programm-choice" value="advise"> Не знаю (Нужен ваш совет)
+            <input class="diet-form__input" type="radio" name="programm-choice" value="advise"> Не знаю (Нужен ваш совет)
           </label>
         </div>
         <div class="diet-form__contacts">
-          <h3 class="diet-form__title">Контактные данные (владельца кота)</h3>
+          <h3 class="diet-form__title">Контактные данные<br> (владельца кота)</h3>
           <label for="email-field">E-mail:*</label>
-          <input type="email" name="email" id="email-field" value="kuklachev@gmail.com" required><br>
+          <input class="diet-form__input" type="email" name="email" id="email-field" value="kuklachev@gmail.com" size="30" required><br>
           <label for="phone-field">Телефон:*</label>
-          <input type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90" required>
+          <input class="diet-form__input" type="tel" name="phone" id="phone-field" value="8 (960) 900-60-90" required>
         </div>
         <div class="diet-form__comment">
           <h3 class="diet-form__title">Комментарий</h3><br>
@@ -72,19 +71,19 @@
         <div class="diet-form__addition">
           <h3 class="diet-form__title">Дополнительно</h3>
           <label>
-            <input type="checkbox" name="shugar" checked> Сахарозаменитель
+            <input class="diet-form__input" type="checkbox" name="shugar" checked> Сахарозаменитель
           </label>
           <br>
           <label>
-            <input type="checkbox" name="water"> Питьевая вода
+            <input class="diet-form__input" type="checkbox" name="water"> Питьевая вода
           </label>
           <br>
           <label>
-            <input type="checkbox" name="milk"> Молоко
+            <input class="diet-form__input" type="checkbox" name="milk"> Молоко
           </label>
           <br>
           <label>
-            <input type="checkbox" name="vitamine"> Витамины
+            <input class="diet-form__input" type="checkbox" name="vitamine"> Витамины
           </label>
         </div>
         <button class="button button__form" type="submit">Отправить заявку</button><br>
@@ -93,33 +92,35 @@
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer footer--page">
       <div class="footer__contacts contacts">
         <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="footer__map">
-        <img class="footer__map footer__map--image" src="http://placehold.it/150x100" width="150" height="100" alt="Как проехать">
+        <img class="footer__map footer__map--image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Как проехать">
       </div>
-      <div class="footer__logo">
-        <img class="footer__logo footer__logo--image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип в футере">
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">vk</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagramm" href="#">instagramm</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">fb</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__link-image" src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy"></a>
+      <div class="footer__block">
+        <div class="footer__logo">
+          <img class="footer__logo--image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип в футере">
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagramm" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__link-image" src="img/htmlacademy.svg" width="60" height="60" alt="HTML Academy"></a>
+        </div>
       </div>
     </footer>
 

@@ -1,0 +1,52 @@
+body,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+button {
+  border: none;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.button {
+  padding: 12px 74px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  cursor: pointer;
+}
+
+.section-title {
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+@import "header.scss";
+@import "main.scss";
+@import "offers.scss";
+@import "catalog.scss";
+@import "steps.scss";
+@import "example.scss";
+@import "footer.scss";
+@import "contacts.scss";
+@import "social.scss";
+@import "copyright.scss";
+@import "page-catalog.scss";
+@import "products.scss";
+@import "additional.scss";
+@import "goods.scss";
+@import "programm.scss";
+@import "diet-form.scss";
