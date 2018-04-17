@@ -6,6 +6,15 @@ h3 {
   font-family: "Oswald", Arial, sans-serif;
 }
 
+button {
+  border: none;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
 .button {
   padding: 12px 74px;
   color: #ffffff;
@@ -15,6 +24,7 @@ h3 {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #68b738;
+  cursor: pointer;
 }
 
 .section-title {
@@ -34,3 +44,7 @@ h3 {
 @import "contacts.scss";
 @import "social.scss";
 @import "copyright.scss";
+@import "page-catalog.scss";
+@import "products.scss";
+@import "additional.scss";
+@import "goods.scss";
