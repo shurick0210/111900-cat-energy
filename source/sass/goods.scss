@@ -8,7 +8,7 @@
 
 .goods__list {
   color: #444444;
-  font-family: Arial MT, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -22,11 +22,11 @@
   padding-right: 64px;
   padding-bottom: 43px;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: none;
-  background: url('../img/gift-photo-mobile@1x.jpg') 0 0 no-repeat;
+  background: url("../img/gift-photo-mobile@1x.jpg") 0 0 no-repeat;
   background-size: cover;
 }
