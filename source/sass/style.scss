@@ -3,5 +3,17 @@ body {
   padding: 0;
   font-family: "Oswald", Arial, sans-serif;
 }
+.button {
+  padding: 12px 74px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+}
 @import "header.scss";
 @import "main.scss";
+@import "offers.scss";
+@import "catalog.scss";
